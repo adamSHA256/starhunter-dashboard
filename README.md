@@ -2,6 +2,8 @@
 
 A recruiter-facing candidate management dashboard built with React, TypeScript, and the Starhunter GraphQL API. Built as an AI-assisted coding assessment using **Claude Code**.
 
+**[Video Presentation](https://odysee.com/assigment-starhunter:a)**
+
 ## Features
 
 - **Candidate list** with data from the live Starhunter GraphQL API
