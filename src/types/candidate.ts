@@ -261,24 +261,27 @@ export interface GetPresentationsData {
   presentations: ProjectCandidate[]
 }
 
-// -- UI helpers (kept from original) --
+// -- UI helpers --
 
-export type CandidateStatus = 'new' | 'screening' | 'interview' | 'offer' | 'hired' | 'rejected'
-
-export const CANDIDATE_STATUSES: CandidateStatus[] = [
-  'new',
-  'screening',
-  'interview',
-  'offer',
-  'hired',
-  'rejected',
-]
-
-export const STATUS_COLORS: Record<CandidateStatus, string> = {
+/** Maps status strings (lowercase) to Tailwind color classes. API returns free-form strings. */
+export const STATUS_COLORS: Record<string, string> = {
+  // Common values observed in the API — extend as needed
   new: 'bg-blue-100 text-blue-800',
+  active: 'bg-green-100 text-green-800',
+  passive: 'bg-blue-100 text-blue-800',
+  placed: 'bg-emerald-100 text-emerald-800',
+  blocked: 'bg-red-100 text-red-800',
+  archived: 'bg-gray-100 text-gray-600',
   screening: 'bg-yellow-100 text-yellow-800',
   interview: 'bg-purple-100 text-purple-800',
   offer: 'bg-emerald-100 text-emerald-800',
   hired: 'bg-green-100 text-green-800',
   rejected: 'bg-red-100 text-red-800',
+}
+
+export const DEFAULT_STATUS_COLOR = 'bg-gray-100 text-gray-700'
+
+export function getStatusColor(status: string | null): string {
+  if (!status) return DEFAULT_STATUS_COLOR
+  return STATUS_COLORS[status.toLowerCase()] ?? DEFAULT_STATUS_COLOR
 }

@@ -1,7 +1,5 @@
 import type { CandidateListItem } from '../types/candidate'
-import { STATUS_COLORS } from '../types/candidate'
-
-const DEFAULT_STATUS_COLOR = 'bg-gray-100 text-gray-700'
+import { getStatusColor } from '../types/candidate'
 
 function getInitials(name: string | null, firstName: string | null, secondName: string | null): string {
   if (firstName && secondName) {
@@ -15,15 +13,17 @@ function getInitials(name: string | null, firstName: string | null, secondName: 
 
 interface CandidateCardProps {
   candidate: CandidateListItem
+  onClick?: () => void
 }
 
-function CandidateCard({ candidate }: CandidateCardProps) {
-  const statusColor = candidate.status
-    ? STATUS_COLORS[candidate.status as keyof typeof STATUS_COLORS] ?? DEFAULT_STATUS_COLOR
-    : DEFAULT_STATUS_COLOR
+function CandidateCard({ candidate, onClick }: CandidateCardProps) {
+  const statusColor = getStatusColor(candidate.status)
 
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-5 hover:shadow-md transition-shadow">
+    <div
+      className="bg-white rounded-xl shadow-sm border border-gray-200 p-5 hover:shadow-md transition-shadow cursor-pointer"
+      onClick={onClick}
+    >
       {/* Top row: avatar + name/email */}
       <div className="flex items-center gap-3">
         <div className="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center text-gray-600 font-semibold text-sm shrink-0">

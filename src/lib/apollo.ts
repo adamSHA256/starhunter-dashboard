@@ -1,18 +1,23 @@
 import { ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client'
-import { setContext } from '@apollo/client/link/context'
+
+const API_URL = 'https://release-current.starhunter.software/Api/graphql'
+const token = import.meta.env.VITE_API_TOKEN
+
+if (!token) {
+  console.error(
+    '[Apollo] VITE_API_TOKEN is not set. Create a .env file in the project root with:\n' +
+    'VITE_API_TOKEN=your-token-here'
+  )
+}
 
 const httpLink = createHttpLink({
-  uri: 'https://release-current.starhunter.software/Api/graphql',
+  uri: API_URL,
+  headers: {
+    authorization: token ? `Bearer ${token}` : '',
+  },
 })
 
-const authLink = setContext((_, { headers }) => ({
-  headers: {
-    ...headers,
-    authorization: `Bearer ${import.meta.env.VITE_API_TOKEN}`,
-  },
-}))
-
 export const client = new ApolloClient({
-  link: authLink.concat(httpLink),
+  link: httpLink,
   cache: new InMemoryCache(),
 })
