@@ -1,12 +1,16 @@
 import type { CandidateListItem } from '../types/candidate'
-import { getStatusColor } from '../types/candidate'
+import { getStatusColor, getStatusDisplay, getLevelColor, isActiveStatus } from '../types/candidate'
+import { ASSET_BASE_URL } from '../lib/apollo'
 
-function getInitials(name: string | null, firstName: string | null, secondName: string | null): string {
+function getInitials(firstName: string | null, secondName: string | null, name: string | null): string {
   if (firstName && secondName) {
     return `${firstName[0]}${secondName[0]}`.toUpperCase()
   }
+  if (firstName) {
+    return firstName[0].toUpperCase()
+  }
   if (name) {
-    return name.split(' ').map((n) => n[0]).join('').slice(0, 2).toUpperCase()
+    return name.split(' ').filter(Boolean).map((n) => n[0]).join('').slice(0, 2).toUpperCase()
   }
   return '?'
 }
@@ -18,10 +22,12 @@ interface CandidateCardProps {
 
 function CandidateCard({ candidate, onClick }: CandidateCardProps) {
   const statusColor = getStatusColor(candidate.status)
+  const levelColor = getLevelColor(candidate.level)
+  const active = isActiveStatus(candidate.status)
 
   return (
     <div
-      className="bg-white rounded-xl shadow-sm border border-gray-200 p-5 hover:shadow-md transition-shadow cursor-pointer"
+      className={`bg-white rounded-xl shadow-sm border border-gray-200 p-5 hover:shadow-md transition-shadow cursor-pointer overflow-hidden ${active ? 'border-t-2 border-t-green-400' : ''}`}
       onClick={onClick}
     >
       {/* Top row: avatar + name/email */}
@@ -29,12 +35,12 @@ function CandidateCard({ candidate, onClick }: CandidateCardProps) {
         <div className="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center text-gray-600 font-semibold text-sm shrink-0">
           {candidate.avatar ? (
             <img
-              src={candidate.avatar}
+              src={`${ASSET_BASE_URL}${candidate.avatar}`}
               alt={candidate.name ?? ''}
               className="w-12 h-12 rounded-full object-cover"
             />
           ) : (
-            getInitials(candidate.name, candidate.firstName, candidate.secondName)
+            getInitials(candidate.firstName, candidate.secondName, candidate.name)
           )}
         </div>
         <div className="min-w-0">
@@ -43,22 +49,22 @@ function CandidateCard({ candidate, onClick }: CandidateCardProps) {
         </div>
       </div>
 
-      {/* Middle: profession + status badge */}
-      <div className="mt-3 flex items-center justify-between gap-2">
+      {/* Middle: profession/company + status badge (fixed row) */}
+      <div className="mt-3 flex items-center justify-between gap-2 min-h-[24px]">
         <span className="text-sm font-medium text-gray-700 truncate">
-          {candidate.profession ?? candidate.companyName ?? '—'}
+          {candidate.profession || candidate.companyName || ''}
         </span>
         {candidate.status && (
           <span
-            className={`capitalize text-xs font-medium px-2.5 py-0.5 rounded-full inline-block shrink-0 ${statusColor}`}
+            className={`text-xs font-medium px-2.5 py-0.5 rounded-full inline-block shrink-0 ${statusColor}`}
           >
-            {candidate.status}
+            {getStatusDisplay(candidate.status)}
           </span>
         )}
       </div>
 
       {/* Bottom row: location, level, created date */}
-      <div className="mt-4 flex flex-wrap gap-4 text-sm text-gray-500">
+      <div className="mt-4 flex flex-wrap items-center gap-3 text-sm text-gray-500">
         {candidate.currentLocation && (
           <div className="flex items-center gap-1">
             <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
@@ -70,12 +76,9 @@ function CandidateCard({ candidate, onClick }: CandidateCardProps) {
         )}
 
         {candidate.level && (
-          <div className="flex items-center gap-1">
-            <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0" />
-            </svg>
-            <span>{candidate.level}</span>
-          </div>
+          <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${levelColor}`}>
+            {candidate.level}
+          </span>
         )}
 
         {candidate.createdAt && (

@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" font-family="Inter, system-ui, sans-serif">
+  <title>Layout 5: Accordion Rows - Compact rows, expand inline for details, real data</title>
+  <defs>
+    <filter id="shadow5" x="-1%" y="-2%" width="102%" height="108%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <rect width="1440" height="900" fill="#F9FAFB"/>
+
+  <!-- Header -->
+  <rect width="1440" height="52" fill="#1F2937"/>
+  <polygon points="24,26 29,12 34,26 20,18 38,18" fill="#818CF8"/>
+  <text x="42" y="31" fill="white" font-size="15" font-weight="700">Starhunter</text>
+  <text x="580" y="31" fill="#9CA3AF" font-size="12">Dashboard</text>
+  <rect x="668" y="8" width="92" height="36" rx="6" fill="#374151"/>
+  <text x="688" y="31" fill="white" font-size="12" font-weight="500">Candidates</text>
+  <text x="780" y="31" fill="#9CA3AF" font-size="12">Jobs</text>
+  <text x="825" y="31" fill="#9CA3AF" font-size="12">Analytics</text>
+  <circle cx="1410" cy="26" r="14" fill="#374151"/>
+  <text x="1403" y="30" fill="#D1D5DB" font-size="10" font-weight="600">SH</text>
+
+  <!-- Title bar -->
+  <rect x="0" y="52" width="1440" height="60" fill="white"/>
+  <line x1="0" y1="112" x2="1440" y2="112" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="60" y="88" fill="#111827" font-size="18" font-weight="700">Candidates</text>
+  <rect x="180" y="72" width="28" height="22" rx="11" fill="#EEF2FF"/>
+  <text x="188" y="87" fill="#4F46E5" font-size="11" font-weight="600">50</text>
+
+  <rect x="500" y="68" width="360" height="36" rx="8" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1"/>
+  <circle cx="518" cy="86" r="5" fill="none" stroke="#9CA3AF" stroke-width="1.2"/>
+  <line x1="522" y1="90" x2="525" y2="93" stroke="#9CA3AF" stroke-width="1.2"/>
+  <text x="534" y="91" fill="#9CA3AF" font-size="12">Kandidaten suchen...</text>
+  <rect x="880" y="68" width="120" height="36" rx="8" fill="white" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="900" y="91" fill="#6B7280" font-size="12">All Statuses</text>
+  <rect x="1012" y="68" width="120" height="36" rx="8" fill="white" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="1032" y="91" fill="#6B7280" font-size="12">Name A-Z</text>
+
+  <!-- EXPANDED Row: Isabella Rodriguez -->
+  <rect x="60" y="124" width="1320" height="46" rx="8" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1"/>
+  <path d="M84,143 l6,6 6,-6" fill="none" stroke="#4F46E5" stroke-width="2"/>
+  <circle cx="120" cy="147" r="16" fill="#C7D2FE"/>
+  <text x="113" y="152" fill="#4F46E5" font-size="9" font-weight="600">IR</text>
+  <text x="146" y="143" fill="#111827" font-size="13" font-weight="600">Isabella Rodriguez</text>
+  <text x="146" y="158" fill="#6B7280" font-size="11">IR@sciint.de</text>
+  <text x="500" y="151" fill="#374151" font-size="12">0152 786549</text>
+  <text x="700" y="151" fill="#374151" font-size="12">Spezialist</text>
+  <rect x="1150" y="139" width="86" height="20" rx="10" fill="#DBEAFE"/>
+  <text x="1162" y="153" fill="#1E40AF" font-size="10" font-weight="500">Sucht aktiv</text>
+  <text x="1280" y="153" fill="#9CA3AF" font-size="10">C-001</text>
+
+  <!-- Expanded detail area -->
+  <rect x="60" y="172" width="1320" height="200" fill="white" stroke="#E5E7EB" stroke-width="1"/>
+
+  <text x="100" y="204" fill="#9CA3AF" font-size="10">LEVEL</text>
+  <text x="100" y="222" fill="#111827" font-size="13">Spezialist</text>
+  <text x="340" y="204" fill="#9CA3AF" font-size="10">SHORT PROFILE</text>
+  <text x="340" y="222" fill="#111827" font-size="13">Spezialist / Dienstleistungen / Interview</text>
+  <text x="700" y="204" fill="#9CA3AF" font-size="10">INDUSTRIES</text>
+  <text x="700" y="222" fill="#111827" font-size="13">Automobil, Dienstleistungen</text>
+  <text x="1060" y="204" fill="#9CA3AF" font-size="10">RESPONSIBLE</text>
+  <text x="1060" y="222" fill="#111827" font-size="13">Wolf-Hendrik Zapf</text>
+
+  <text x="100" y="258" fill="#9CA3AF" font-size="10">SALARY REQUIREMENT</text>
+  <text x="100" y="276" fill="#111827" font-size="13">80.000</text>
+  <text x="340" y="258" fill="#9CA3AF" font-size="10">NOTICE PERIOD UNIT</text>
+  <text x="340" y="276" fill="#111827" font-size="13">Woche</text>
+  <text x="700" y="258" fill="#9CA3AF" font-size="10">EMPLOYMENT FACTOR</text>
+  <text x="700" y="276" fill="#111827" font-size="13">0% - 100%</text>
+  <text x="1060" y="258" fill="#9CA3AF" font-size="10">AVAILABILITY DATE</text>
+  <text x="1060" y="276" fill="#111827" font-size="13">Dec 17, 2023</text>
+
+  <text x="100" y="312" fill="#9CA3AF" font-size="10">LANGUAGES</text>
+  <text x="100" y="330" fill="#111827" font-size="12">Spanisch (Native), English (Fluent), German (Fluent)</text>
+
+  <text x="700" y="312" fill="#9CA3AF" font-size="10">PROJECTS</text>
+  <rect x="700" y="322" width="280" height="28" rx="6" fill="#F3F4F6"/>
+  <text x="716" y="341" fill="#374151" font-size="10">ERWETA - IT-Projektmanager IIoT</text>
+  <rect x="950" y="329" width="56" height="16" rx="8" fill="#FEE2E2"/>
+  <text x="958" y="340" fill="#991B1B" font-size="8">Abgesagt</text>
+
+  <!-- COLLAPSED rows -->
+  <!-- Karin Nowak -->
+  <rect x="60" y="382" width="1320" height="46" rx="8" fill="white" stroke="#E5E7EB" stroke-width="1"/>
+  <path d="M90,404 l6,-6 6,6" fill="none" stroke="#9CA3AF" stroke-width="2"/>
+  <circle cx="120" cy="405" r="16" fill="#DBEAFE"/>
+  <text x="112" y="410" fill="#1E40AF" font-size="9" font-weight="600">KN</text>
+  <text x="146" y="401" fill="#111827" font-size="13" font-weight="500">Karin Nowak</text>
+  <text x="146" y="416" fill="#6B7280" font-size="11">karin@mailings.com</text>
+  <text x="500" y="409" fill="#374151" font-size="12">081347654</text>
+  <text x="700" y="409" fill="#374151" font-size="12">Management</text>
+  <rect x="1150" y="397" width="86" height="20" rx="10" fill="#DBEAFE"/>
+  <text x="1162" y="411" fill="#1E40AF" font-size="10" font-weight="500">Sucht aktiv</text>
+  <text x="1280" y="411" fill="#9CA3AF" font-size="10">C-003</text>
+
+  <!-- Alexander Schumann -->
+  <rect x="60" y="436" width="1320" height="46" rx="8" fill="white" stroke="#E5E7EB" stroke-width="1"/>
+  <path d="M90,458 l6,-6 6,6" fill="none" stroke="#9CA3AF" stroke-width="2"/>
+  <circle cx="120" cy="459" r="16" fill="#DBEAFE"/>
+  <text x="113" y="464" fill="#1E40AF" font-size="9" font-weight="600">AS</text>
+  <text x="146" y="455" fill="#111827" font-size="13" font-weight="500">Alexander Schumann</text>
+  <text x="146" y="470" fill="#6B7280" font-size="11">wz@starhunter.de</text>
+  <text x="500" y="463" fill="#374151" font-size="12">089 4670 - 34</text>
+  <text x="700" y="463" fill="#374151" font-size="12">Management</text>
+  <rect x="1150" y="451" width="86" height="20" rx="10" fill="#DBEAFE"/>
+  <text x="1162" y="465" fill="#1E40AF" font-size="10" font-weight="500">Sucht aktiv</text>
+  <text x="1280" y="465" fill="#9CA3AF" font-size="10">C-004</text>
+
+  <!-- Julia Mbeki -->
+  <rect x="60" y="490" width="1320" height="46" rx="8" fill="white" stroke="#E5E7EB" stroke-width="1"/>
+  <path d="M90,512 l6,-6 6,6" fill="none" stroke="#9CA3AF" stroke-width="2"/>
+  <circle cx="120" cy="513" r="16" fill="#DBEAFE"/>
+  <text x="113" y="518" fill="#1E40AF" font-size="9" font-weight="600">JM</text>
+  <text x="146" y="509" fill="#111827" font-size="13" font-weight="500">Julia Mbeki</text>
+  <text x="146" y="524" fill="#6B7280" font-size="11">Juliambeki@infomail.com</text>
+  <text x="500" y="517" fill="#374151" font-size="12">01723587766</text>
+  <text x="700" y="517" fill="#374151" font-size="12">Board</text>
+  <rect x="1150" y="505" width="86" height="20" rx="10" fill="#DBEAFE"/>
+  <text x="1162" y="519" fill="#1E40AF" font-size="10" font-weight="500">Sucht aktiv</text>
+  <text x="1280" y="519" fill="#9CA3AF" font-size="10">C-005</text>
+
+  <!-- Werner Lindner (no status) -->
+  <rect x="60" y="544" width="1320" height="46" rx="8" fill="white" stroke="#E5E7EB" stroke-width="1"/>
+  <path d="M90,566 l6,-6 6,6" fill="none" stroke="#9CA3AF" stroke-width="2"/>
+  <circle cx="120" cy="567" r="16" fill="#E5E7EB"/>
+  <text x="111" y="572" fill="#6B7280" font-size="9" font-weight="600">WL</text>
+  <text x="146" y="563" fill="#111827" font-size="13" font-weight="500">Werner Lindner</text>
+  <text x="146" y="578" fill="#6B7280" font-size="11">lindner@mmb.de</text>
+  <text x="500" y="571" fill="#374151" font-size="12">09756454</text>
+  <text x="700" y="571" fill="#374151" font-size="12">Spezialist</text>
+  <rect x="1150" y="559" width="36" height="20" rx="10" fill="#F3F4F6"/>
+  <text x="1161" y="573" fill="#9CA3AF" font-size="10">--</text>
+  <text x="1280" y="573" fill="#9CA3AF" font-size="10">C-017</text>
+
+  <!-- Carlo Green (no status, no level) -->
+  <rect x="60" y="598" width="1320" height="46" rx="8" fill="white" stroke="#E5E7EB" stroke-width="1"/>
+  <path d="M90,620 l6,-6 6,6" fill="none" stroke="#9CA3AF" stroke-width="2"/>
+  <circle cx="120" cy="621" r="16" fill="#E5E7EB"/>
+  <text x="112" y="626" fill="#6B7280" font-size="9" font-weight="600">CG</text>
+  <text x="146" y="617" fill="#111827" font-size="13" font-weight="500">Carlo Green</text>
+  <text x="146" y="632" fill="#6B7280" font-size="11">green@consultinggroup.com</text>
+  <text x="500" y="625" fill="#374151" font-size="12">01252353</text>
+  <text x="700" y="625" fill="#9CA3AF" font-size="12">--</text>
+  <rect x="1150" y="613" width="36" height="20" rx="10" fill="#F3F4F6"/>
+  <text x="1161" y="627" fill="#9CA3AF" font-size="10">--</text>
+  <text x="1280" y="627" fill="#9CA3AF" font-size="10">C-020</text>
+
+  <!-- Pagination -->
+  <rect x="60" y="660" width="1320" height="40" rx="8" fill="white" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="80" y="685" fill="#6B7280" font-size="12">1-6 of 50</text>
+  <rect x="1256" y="668" width="28" height="26" rx="6" fill="#4F46E5"/>
+  <text x="1266" y="686" fill="white" font-size="11" font-weight="500">1</text>
+  <rect x="1292" y="668" width="28" height="26" rx="6" fill="white" stroke="#D1D5DB" stroke-width="1"/>
+  <text x="1302" y="686" fill="#374151" font-size="11">2</text>
+  <rect x="1328" y="668" width="28" height="26" rx="6" fill="white" stroke="#D1D5DB" stroke-width="1"/>
+  <path d="M1338,678 l4,4 -4,4" fill="none" stroke="#6B7280" stroke-width="1.5"/>
+</svg>

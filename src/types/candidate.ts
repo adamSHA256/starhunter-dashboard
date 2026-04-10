@@ -265,7 +265,7 @@ export interface GetPresentationsData {
 
 /** Maps status strings (lowercase) to Tailwind color classes. API returns free-form strings. */
 export const STATUS_COLORS: Record<string, string> = {
-  // Common values observed in the API — extend as needed
+  'sucht aktiv': 'bg-green-100 text-green-800',
   new: 'bg-blue-100 text-blue-800',
   active: 'bg-green-100 text-green-800',
   passive: 'bg-blue-100 text-blue-800',
@@ -284,4 +284,35 @@ export const DEFAULT_STATUS_COLOR = 'bg-gray-100 text-gray-700'
 export function getStatusColor(status: string | null): string {
   if (!status) return DEFAULT_STATUS_COLOR
   return STATUS_COLORS[status.toLowerCase()] ?? DEFAULT_STATUS_COLOR
+}
+
+/** Maps raw API status strings to short display labels. */
+const STATUS_DISPLAY: Record<string, string> = {
+  'sucht aktiv': 'Active',
+}
+
+export function getStatusDisplay(status: string): string {
+  return STATUS_DISPLAY[status.toLowerCase()] ?? status
+}
+
+/** Returns true if the candidate status indicates they are actively seeking. */
+export function isActiveStatus(status: string | null): boolean {
+  if (!status) return false
+  const s = status.toLowerCase()
+  return s === 'sucht aktiv' || s === 'active'
+}
+
+/** Maps level strings (lowercase) to Tailwind color classes for the level badge. */
+export const LEVEL_COLORS: Record<string, string> = {
+  board: 'bg-purple-100 text-purple-700',
+  management: 'bg-indigo-100 text-indigo-700',
+  spezialist: 'bg-cyan-100 text-cyan-700',
+  coo: 'bg-amber-100 text-amber-700',
+}
+
+export const DEFAULT_LEVEL_COLOR = 'bg-gray-100 text-gray-600'
+
+export function getLevelColor(level: string | null): string {
+  if (!level) return DEFAULT_LEVEL_COLOR
+  return LEVEL_COLORS[level.toLowerCase()] ?? DEFAULT_LEVEL_COLOR
 }

@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" font-family="Inter, system-ui, sans-serif">
+  <title>Layout 8: Wide Horizontal Cards - Single column, info-dense, real data</title>
+  <defs>
+    <filter id="shadow8" x="-1%" y="-2%" width="102%" height="108%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <rect width="1440" height="900" fill="#F9FAFB"/>
+
+  <!-- Header -->
+  <rect width="1440" height="52" fill="#111827"/>
+  <polygon points="20,26 25,12 30,26 16,18 34,18" fill="#818CF8"/>
+  <text x="38" y="31" fill="white" font-size="15" font-weight="700">Starhunter</text>
+  <rect x="470" y="10" width="500" height="32" rx="16" fill="#374151"/>
+  <circle cx="492" cy="26" r="5" fill="none" stroke="#6B7280" stroke-width="1.2"/>
+  <line x1="496" y1="30" x2="499" y2="33" stroke="#6B7280" stroke-width="1.2"/>
+  <text x="508" y="31" fill="#6B7280" font-size="12">Kandidaten suchen...</text>
+  <text x="1100" y="31" fill="#9CA3AF" font-size="12">Dashboard</text>
+  <text x="1190" y="31" fill="white" font-size="12" font-weight="500">Candidates</text>
+  <text x="1290" y="31" fill="#9CA3AF" font-size="12">Jobs</text>
+  <circle cx="1410" cy="26" r="14" fill="#374151"/>
+  <text x="1403" y="30" fill="#D1D5DB" font-size="10" font-weight="600">SH</text>
+
+  <!-- Sub-header -->
+  <rect x="0" y="52" width="1440" height="48" fill="white"/>
+  <line x1="0" y1="100" x2="1440" y2="100" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="40" y="82" fill="#111827" font-size="17" font-weight="700">Candidates</text>
+  <text x="150" y="82" fill="#9CA3AF" font-size="13">50 total</text>
+  <rect x="700" y="64" width="120" height="28" rx="6" fill="white" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="716" y="83" fill="#6B7280" font-size="11">All Statuses</text>
+  <rect x="830" y="64" width="120" height="28" rx="6" fill="white" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="846" y="83" fill="#6B7280" font-size="11">All Levels</text>
+  <rect x="960" y="64" width="120" height="28" rx="6" fill="white" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="976" y="83" fill="#6B7280" font-size="11">Name A-Z</text>
+
+  <!-- View toggle -->
+  <rect x="1300" y="64" width="36" height="28" rx="6" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1"/>
+  <line x1="1310" y1="74" x2="1326" y2="74" stroke="#4F46E5" stroke-width="2"/>
+  <line x1="1310" y1="82" x2="1326" y2="82" stroke="#4F46E5" stroke-width="2"/>
+  <rect x="1344" y="64" width="36" height="28" rx="6" fill="white" stroke="#E5E7EB" stroke-width="1"/>
+  <rect x="1352" y="72" width="6" height="6" rx="1" fill="#9CA3AF"/>
+  <rect x="1362" y="72" width="6" height="6" rx="1" fill="#9CA3AF"/>
+  <rect x="1352" y="82" width="6" height="6" rx="1" fill="#9CA3AF"/>
+  <rect x="1362" y="82" width="6" height="6" rx="1" fill="#9CA3AF"/>
+
+  <!-- Card 1: Isabella Rodriguez -->
+  <rect x="40" y="116" width="1360" height="86" rx="10" fill="white" filter="url(#shadow8)"/>
+  <circle cx="80" cy="159" r="26" fill="#DBEAFE"/>
+  <text x="69" y="165" fill="#1E40AF" font-size="13" font-weight="600">IR</text>
+  <text x="118" y="142" fill="#111827" font-size="15" font-weight="600">Isabella Rodriguez</text>
+  <text x="118" y="160" fill="#6B7280" font-size="12">IR@sciint.de</text>
+  <text x="118" y="178" fill="#9CA3AF" font-size="11">0152 786549</text>
+  <text x="380" y="140" fill="#9CA3AF" font-size="10">LEVEL</text>
+  <text x="380" y="158" fill="#374151" font-size="13">Spezialist</text>
+  <text x="560" y="140" fill="#9CA3AF" font-size="10">CANDIDATE #</text>
+  <text x="560" y="158" fill="#374151" font-size="13">1</text>
+  <text x="700" y="140" fill="#9CA3AF" font-size="10">CREATED</text>
+  <text x="700" y="158" fill="#374151" font-size="13">Sep 3, 2015</text>
+  <text x="900" y="140" fill="#9CA3AF" font-size="10">UPDATED</text>
+  <text x="900" y="158" fill="#374151" font-size="13">Jul 9, 2025</text>
+  <rect x="1150" y="145" width="86" height="24" rx="12" fill="#DBEAFE"/>
+  <text x="1163" y="162" fill="#1E40AF" font-size="11" font-weight="500">Sucht aktiv</text>
+  <path d="M1360,155 l6,4 -6,4" fill="none" stroke="#D1D5DB" stroke-width="2"/>
+
+  <!-- Card 2: Karin Nowak -->
+  <rect x="40" y="214" width="1360" height="86" rx="10" fill="white" filter="url(#shadow8)"/>
+  <circle cx="80" cy="257" r="26" fill="#DBEAFE"/>
+  <text x="68" y="263" fill="#1E40AF" font-size="13" font-weight="600">KN</text>
+  <text x="118" y="240" fill="#111827" font-size="15" font-weight="600">Karin Nowak</text>
+  <text x="118" y="258" fill="#6B7280" font-size="12">karin@mailings.com</text>
+  <text x="118" y="276" fill="#9CA3AF" font-size="11">081347654</text>
+  <text x="380" y="238" fill="#9CA3AF" font-size="10">LEVEL</text>
+  <text x="380" y="256" fill="#374151" font-size="13">Management</text>
+  <text x="560" y="238" fill="#9CA3AF" font-size="10">CANDIDATE #</text>
+  <text x="560" y="256" fill="#374151" font-size="13">3</text>
+  <text x="700" y="238" fill="#9CA3AF" font-size="10">CREATED</text>
+  <text x="700" y="256" fill="#374151" font-size="13">Sep 3, 2015</text>
+  <text x="900" y="238" fill="#9CA3AF" font-size="10">UPDATED</text>
+  <text x="900" y="256" fill="#374151" font-size="13">Jul 9, 2025</text>
+  <rect x="1150" y="243" width="86" height="24" rx="12" fill="#DBEAFE"/>
+  <text x="1163" y="260" fill="#1E40AF" font-size="11" font-weight="500">Sucht aktiv</text>
+  <path d="M1360,253 l6,4 -6,4" fill="none" stroke="#D1D5DB" stroke-width="2"/>
+
+  <!-- Card 3: Alexander Schumann -->
+  <rect x="40" y="312" width="1360" height="86" rx="10" fill="white" filter="url(#shadow8)"/>
+  <circle cx="80" cy="355" r="26" fill="#DBEAFE"/>
+  <text x="68" y="361" fill="#1E40AF" font-size="13" font-weight="600">AS</text>
+  <text x="118" y="338" fill="#111827" font-size="15" font-weight="600">Alexander Schumann</text>
+  <text x="118" y="356" fill="#6B7280" font-size="12">wz@starhunter.de</text>
+  <text x="118" y="374" fill="#9CA3AF" font-size="11">089 4670 - 34</text>
+  <text x="380" y="336" fill="#9CA3AF" font-size="10">LEVEL</text>
+  <text x="380" y="354" fill="#374151" font-size="13">Management</text>
+  <text x="560" y="336" fill="#9CA3AF" font-size="10">CANDIDATE #</text>
+  <text x="560" y="354" fill="#374151" font-size="13">4</text>
+  <text x="700" y="336" fill="#9CA3AF" font-size="10">CREATED</text>
+  <text x="700" y="354" fill="#374151" font-size="13">Sep 3, 2015</text>
+  <text x="900" y="336" fill="#9CA3AF" font-size="10">UPDATED</text>
+  <text x="900" y="354" fill="#374151" font-size="13">Oct 13, 2025</text>
+  <rect x="1150" y="341" width="86" height="24" rx="12" fill="#DBEAFE"/>
+  <text x="1163" y="358" fill="#1E40AF" font-size="11" font-weight="500">Sucht aktiv</text>
+  <path d="M1360,351 l6,4 -6,4" fill="none" stroke="#D1D5DB" stroke-width="2"/>
+
+  <!-- Card 4: Werner Lindner (no status) -->
+  <rect x="40" y="410" width="1360" height="86" rx="10" fill="white" filter="url(#shadow8)"/>
+  <circle cx="80" cy="453" r="26" fill="#E5E7EB"/>
+  <text x="66" y="459" fill="#6B7280" font-size="13" font-weight="600">WL</text>
+  <text x="118" y="436" fill="#111827" font-size="15" font-weight="600">Werner Lindner</text>
+  <text x="118" y="454" fill="#6B7280" font-size="12">lindner@mmb.de</text>
+  <text x="118" y="472" fill="#9CA3AF" font-size="11">09756454</text>
+  <text x="380" y="434" fill="#9CA3AF" font-size="10">LEVEL</text>
+  <text x="380" y="452" fill="#374151" font-size="13">Spezialist</text>
+  <text x="560" y="434" fill="#9CA3AF" font-size="10">CANDIDATE #</text>
+  <text x="560" y="452" fill="#374151" font-size="13">17</text>
+  <text x="700" y="434" fill="#9CA3AF" font-size="10">CREATED</text>
+  <text x="700" y="452" fill="#374151" font-size="13">Oct 17, 2015</text>
+  <text x="900" y="434" fill="#9CA3AF" font-size="10">UPDATED</text>
+  <text x="900" y="452" fill="#374151" font-size="13">Feb 6, 2026</text>
+  <rect x="1150" y="439" width="36" height="24" rx="12" fill="#F3F4F6"/>
+  <text x="1161" y="456" fill="#9CA3AF" font-size="11">--</text>
+  <path d="M1360,449 l6,4 -6,4" fill="none" stroke="#D1D5DB" stroke-width="2"/>
+
+  <!-- Card 5: Dr. Annika Williams (no status) -->
+  <rect x="40" y="508" width="1360" height="86" rx="10" fill="white" filter="url(#shadow8)"/>
+  <circle cx="80" cy="551" r="26" fill="#E5E7EB"/>
+  <text x="66" y="557" fill="#6B7280" font-size="13" font-weight="600">AW</text>
+  <text x="118" y="534" fill="#111827" font-size="15" font-weight="600">Dr. Annika Williams</text>
+  <text x="118" y="552" fill="#6B7280" font-size="12">annika.williams@projectlife.de</text>
+  <text x="118" y="570" fill="#9CA3AF" font-size="11">07564645</text>
+  <text x="380" y="532" fill="#9CA3AF" font-size="10">LEVEL</text>
+  <text x="380" y="550" fill="#374151" font-size="13">Board</text>
+  <text x="560" y="532" fill="#9CA3AF" font-size="10">CANDIDATE #</text>
+  <text x="560" y="550" fill="#374151" font-size="13">21</text>
+  <text x="700" y="532" fill="#9CA3AF" font-size="10">CREATED</text>
+  <text x="700" y="550" fill="#374151" font-size="13">Nov 23, 2015</text>
+  <text x="900" y="532" fill="#9CA3AF" font-size="10">UPDATED</text>
+  <text x="900" y="550" fill="#374151" font-size="13">Feb 6, 2026</text>
+  <rect x="1150" y="537" width="36" height="24" rx="12" fill="#F3F4F6"/>
+  <text x="1161" y="554" fill="#9CA3AF" font-size="11">--</text>
+  <path d="M1360,547 l6,4 -6,4" fill="none" stroke="#D1D5DB" stroke-width="2"/>
+
+  <!-- Pagination -->
+  <rect x="40" y="616" width="1360" height="40" rx="8" fill="white" filter="url(#shadow8)"/>
+  <text x="60" y="641" fill="#6B7280" font-size="12">Showing 1-5 of 50</text>
+  <rect x="1280" y="624" width="28" height="26" rx="6" fill="#4F46E5"/>
+  <text x="1290" y="642" fill="white" font-size="11" font-weight="500">1</text>
+  <rect x="1316" y="624" width="28" height="26" rx="6" fill="white" stroke="#D1D5DB" stroke-width="1"/>
+  <text x="1326" y="642" fill="#374151" font-size="11">2</text>
+  <rect x="1352" y="624" width="28" height="26" rx="6" fill="white" stroke="#D1D5DB" stroke-width="1"/>
+  <path d="M1362,634 l4,4 -4,4" fill="none" stroke="#6B7280" stroke-width="1.5"/>
+</svg>

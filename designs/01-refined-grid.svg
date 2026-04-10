@@ -1,0 +1,211 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" font-family="Inter, system-ui, sans-serif">
+  <title>Layout 1: Refined Card Grid - Top toolbar, 3-column cards, level color palette</title>
+  <defs>
+    <filter id="shadow1" x="-2%" y="-2%" width="104%" height="108%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1440" height="900" fill="#F9FAFB"/>
+
+  <!-- Header - full width, slim, integrated search -->
+  <rect width="1440" height="56" fill="#1F2937"/>
+  <polygon points="28,28 33,14 38,28 24,20 42,20" fill="#818CF8"/>
+  <text x="48" y="33" fill="white" font-size="16" font-weight="700">Starhunter</text>
+  <line x1="120" y1="18" x2="120" y2="38" stroke="#4B5563" stroke-width="1"/>
+  <text x="130" y="33" fill="#9CA3AF" font-size="13">Candidates</text>
+
+  <!-- Header search bar -->
+  <rect x="300" y="12" width="500" height="32" rx="8" fill="#374151"/>
+  <text x="320" y="33" fill="#6B7280" font-size="12">Kandidaten suchen...</text>
+  <circle cx="780" cy="28" r="6" fill="none" stroke="#6B7280" stroke-width="1.5"/>
+  <line x1="784" y1="32" x2="788" y2="36" stroke="#6B7280" stroke-width="1.5"/>
+
+  <circle cx="1400" cy="28" r="16" fill="#374151"/>
+  <text x="1392" y="33" fill="#D1D5DB" font-size="11" font-weight="600">SH</text>
+
+  <!-- Sidebar -->
+  <rect x="0" y="56" width="220" height="844" fill="#111827"/>
+  <rect x="12" y="72" width="196" height="36" rx="6" fill="#1F2937"/>
+  <text x="44" y="95" fill="white" font-size="13" font-weight="500">Dashboard</text>
+  <rect x="20" y="80" width="14" height="14" rx="3" fill="#818CF8" opacity="0.3"/>
+  <text x="44" y="131" fill="#9CA3AF" font-size="13">Candidates</text>
+  <rect x="20" y="119" width="14" height="14" rx="3" fill="#4B5563"/>
+  <text x="44" y="167" fill="#9CA3AF" font-size="13">Jobs</text>
+  <rect x="20" y="155" width="14" height="14" rx="3" fill="#4B5563"/>
+  <text x="44" y="203" fill="#9CA3AF" font-size="13">Analytics</text>
+  <rect x="20" y="191" width="14" height="14" rx="3" fill="#4B5563"/>
+  <text x="44" y="239" fill="#9CA3AF" font-size="13">Settings</text>
+  <rect x="20" y="227" width="14" height="14" rx="3" fill="#4B5563"/>
+  <text x="20" y="880" fill="#4B5563" font-size="11">v1.0.0</text>
+
+  <!-- Main content -->
+  <text x="244" y="92" fill="#111827" font-size="22" font-weight="700">Candidates</text>
+  <text x="244" y="112" fill="#6B7280" font-size="13">50 candidates found</text>
+
+  <!-- Filter row -->
+  <rect x="244" y="128" width="140" height="34" rx="8" fill="white" stroke="#D1D5DB" stroke-width="1"/>
+  <text x="260" y="150" fill="#6B7280" font-size="12">All Statuses</text>
+  <path d="M370,143 l4,5 4,-5" fill="none" stroke="#9CA3AF" stroke-width="1.5"/>
+
+  <rect x="396" y="128" width="150" height="34" rx="8" fill="white" stroke="#D1D5DB" stroke-width="1"/>
+  <text x="412" y="150" fill="#6B7280" font-size="12">Name A-Z</text>
+  <path d="M530,140 l4,-5 4,5 M530,148 l4,5 4,-5" fill="none" stroke="#9CA3AF" stroke-width="1.2"/>
+
+  <!-- LEVEL COLOR LEGEND -->
+  <text x="580" y="150" fill="#9CA3AF" font-size="10">LEVELS:</text>
+  <circle cx="640" cy="146" r="4" fill="#7C3AED"/>
+  <text x="648" y="150" fill="#6B7280" font-size="10">Board</text>
+  <circle cx="700" cy="146" r="4" fill="#4F46E5"/>
+  <text x="708" y="150" fill="#6B7280" font-size="10">Management</text>
+  <circle cx="798" cy="146" r="4" fill="#0891B2"/>
+  <text x="806" y="150" fill="#6B7280" font-size="10">Spezialist</text>
+  <circle cx="880" cy="146" r="4" fill="#D97706"/>
+  <text x="888" y="150" fill="#6B7280" font-size="10">COO</text>
+
+  <!-- Card Grid: 3 columns, REAL DATA with level colors -->
+
+  <!-- Card 1: Isabella Rodriguez — Spezialist (teal) -->
+  <rect x="244" y="180" width="370" height="150" rx="12" fill="white" filter="url(#shadow1)"/>
+  <rect x="244" y="180" width="370" height="4" rx="12" fill="#0891B2"/>
+  <circle cx="278" cy="218" r="22" fill="#ECFEFF"/>
+  <text x="270" y="223" fill="#0891B2" font-size="11" font-weight="600">IR</text>
+  <text x="308" y="214" fill="#111827" font-size="14" font-weight="600">Isabella Rodriguez</text>
+  <text x="308" y="232" fill="#6B7280" font-size="12">IR@sciint.de</text>
+  <rect x="510" y="252" width="86" height="20" rx="10" fill="#F3F4F6"/>
+  <text x="520" y="266" fill="#374151" font-size="10" font-weight="500">Sucht aktiv</text>
+  <!-- Level badge -->
+  <rect x="268" y="258" width="76" height="20" rx="10" fill="#ECFEFF"/>
+  <text x="280" y="272" fill="#0891B2" font-size="10" font-weight="500">Spezialist</text>
+  <text x="268" y="308" fill="#9CA3AF" font-size="11">C-001</text>
+  <text x="500" y="308" fill="#D1D5DB" font-size="10">Sep 3, 2015</text>
+
+  <!-- Card 2: Karin Nowak — Management (indigo) -->
+  <rect x="626" y="180" width="370" height="150" rx="12" fill="white" filter="url(#shadow1)"/>
+  <rect x="626" y="180" width="370" height="4" rx="12" fill="#4F46E5"/>
+  <circle cx="660" cy="218" r="22" fill="#EEF2FF"/>
+  <text x="651" y="223" fill="#4F46E5" font-size="11" font-weight="600">KN</text>
+  <text x="690" y="214" fill="#111827" font-size="14" font-weight="600">Karin Nowak</text>
+  <text x="690" y="232" fill="#6B7280" font-size="12">karin@mailings.com</text>
+  <rect x="892" y="252" width="86" height="20" rx="10" fill="#F3F4F6"/>
+  <text x="902" y="266" fill="#374151" font-size="10" font-weight="500">Sucht aktiv</text>
+  <rect x="650" y="258" width="90" height="20" rx="10" fill="#EEF2FF"/>
+  <text x="660" y="272" fill="#4F46E5" font-size="10" font-weight="500">Management</text>
+  <text x="650" y="308" fill="#9CA3AF" font-size="11">C-003</text>
+  <text x="880" y="308" fill="#D1D5DB" font-size="10">Sep 3, 2015</text>
+
+  <!-- Card 3: Alexander Schumann — Management (indigo) -->
+  <rect x="1008" y="180" width="370" height="150" rx="12" fill="white" filter="url(#shadow1)"/>
+  <rect x="1008" y="180" width="370" height="4" rx="12" fill="#4F46E5"/>
+  <circle cx="1042" cy="218" r="22" fill="#EEF2FF"/>
+  <text x="1033" y="223" fill="#4F46E5" font-size="11" font-weight="600">AS</text>
+  <text x="1072" y="214" fill="#111827" font-size="14" font-weight="600">Alexander Schumann</text>
+  <text x="1072" y="232" fill="#6B7280" font-size="12">wz@starhunter.de</text>
+  <rect x="1274" y="252" width="86" height="20" rx="10" fill="#F3F4F6"/>
+  <text x="1284" y="266" fill="#374151" font-size="10" font-weight="500">Sucht aktiv</text>
+  <rect x="1032" y="258" width="90" height="20" rx="10" fill="#EEF2FF"/>
+  <text x="1042" y="272" fill="#4F46E5" font-size="10" font-weight="500">Management</text>
+  <text x="1032" y="308" fill="#9CA3AF" font-size="11">C-004</text>
+  <text x="1260" y="308" fill="#D1D5DB" font-size="10">Sep 3, 2015</text>
+
+  <!-- Row 2 -->
+  <!-- Card 4: Julia Mbeki — Board (purple) -->
+  <rect x="244" y="344" width="370" height="150" rx="12" fill="white" filter="url(#shadow1)"/>
+  <rect x="244" y="344" width="370" height="4" rx="12" fill="#7C3AED"/>
+  <circle cx="278" cy="382" r="22" fill="#F5F3FF"/>
+  <text x="269" y="387" fill="#7C3AED" font-size="11" font-weight="600">JM</text>
+  <text x="308" y="378" fill="#111827" font-size="14" font-weight="600">Julia Mbeki</text>
+  <text x="308" y="396" fill="#6B7280" font-size="12">Juliambeki@infomail.com</text>
+  <rect x="510" y="416" width="86" height="20" rx="10" fill="#F3F4F6"/>
+  <text x="520" y="430" fill="#374151" font-size="10" font-weight="500">Sucht aktiv</text>
+  <rect x="268" y="422" width="56" height="20" rx="10" fill="#F5F3FF"/>
+  <text x="280" y="436" fill="#7C3AED" font-size="10" font-weight="500">Board</text>
+  <text x="268" y="472" fill="#9CA3AF" font-size="11">C-005</text>
+  <text x="500" y="472" fill="#D1D5DB" font-size="10">Sep 3, 2015</text>
+
+  <!-- Card 5: Katharina Simon — Management (indigo) -->
+  <rect x="626" y="344" width="370" height="150" rx="12" fill="white" filter="url(#shadow1)"/>
+  <rect x="626" y="344" width="370" height="4" rx="12" fill="#4F46E5"/>
+  <circle cx="660" cy="382" r="22" fill="#EEF2FF"/>
+  <text x="651" y="387" fill="#4F46E5" font-size="11" font-weight="600">KS</text>
+  <text x="690" y="378" fill="#111827" font-size="14" font-weight="600">Katharina Simon</text>
+  <text x="690" y="396" fill="#6B7280" font-size="12">simon@ctu.com</text>
+  <rect x="892" y="416" width="86" height="20" rx="10" fill="#F3F4F6"/>
+  <text x="902" y="430" fill="#374151" font-size="10" font-weight="500">Sucht aktiv</text>
+  <rect x="650" y="422" width="90" height="20" rx="10" fill="#EEF2FF"/>
+  <text x="660" y="436" fill="#4F46E5" font-size="10" font-weight="500">Management</text>
+  <text x="650" y="472" fill="#9CA3AF" font-size="11">C-006</text>
+  <text x="880" y="472" fill="#D1D5DB" font-size="10">Sep 3, 2015</text>
+
+  <!-- Card 6: Mark Cruz — Management (indigo) -->
+  <rect x="1008" y="344" width="370" height="150" rx="12" fill="white" filter="url(#shadow1)"/>
+  <rect x="1008" y="344" width="370" height="4" rx="12" fill="#4F46E5"/>
+  <circle cx="1042" cy="382" r="22" fill="#EEF2FF"/>
+  <text x="1032" y="387" fill="#4F46E5" font-size="11" font-weight="600">MC</text>
+  <text x="1072" y="378" fill="#111827" font-size="14" font-weight="600">Mark Cruz</text>
+  <text x="1072" y="396" fill="#6B7280" font-size="12">cs@starhunter.com</text>
+  <rect x="1274" y="416" width="86" height="20" rx="10" fill="#F3F4F6"/>
+  <text x="1284" y="430" fill="#374151" font-size="10" font-weight="500">Sucht aktiv</text>
+  <rect x="1032" y="422" width="90" height="20" rx="10" fill="#EEF2FF"/>
+  <text x="1042" y="436" fill="#4F46E5" font-size="10" font-weight="500">Management</text>
+  <text x="1032" y="472" fill="#9CA3AF" font-size="11">C-007</text>
+  <text x="1260" y="472" fill="#D1D5DB" font-size="10">Sep 4, 2015</text>
+
+  <!-- Row 3 -->
+  <!-- Card 7: Anita Krumbach — Management (indigo) -->
+  <rect x="244" y="508" width="370" height="150" rx="12" fill="white" filter="url(#shadow1)"/>
+  <rect x="244" y="508" width="370" height="4" rx="12" fill="#4F46E5"/>
+  <circle cx="278" cy="546" r="22" fill="#EEF2FF"/>
+  <text x="269" y="551" fill="#4F46E5" font-size="11" font-weight="600">AK</text>
+  <text x="308" y="542" fill="#111827" font-size="14" font-weight="600">Anita Krumbach</text>
+  <text x="308" y="560" fill="#6B7280" font-size="12">anita@supermail.com</text>
+  <rect x="510" y="580" width="86" height="20" rx="10" fill="#F3F4F6"/>
+  <text x="520" y="594" fill="#374151" font-size="10" font-weight="500">Sucht aktiv</text>
+  <rect x="268" y="586" width="90" height="20" rx="10" fill="#EEF2FF"/>
+  <text x="278" y="600" fill="#4F46E5" font-size="10" font-weight="500">Management</text>
+  <text x="268" y="636" fill="#9CA3AF" font-size="11">C-008</text>
+  <text x="500" y="636" fill="#D1D5DB" font-size="10">Sep 4, 2015</text>
+
+  <!-- Card 8: Werner Lindner — Spezialist (teal), NO status -->
+  <rect x="626" y="508" width="370" height="150" rx="12" fill="white" filter="url(#shadow1)"/>
+  <rect x="626" y="508" width="370" height="4" rx="12" fill="#0891B2"/>
+  <circle cx="660" cy="546" r="22" fill="#ECFEFF"/>
+  <text x="649" y="551" fill="#0891B2" font-size="11" font-weight="600">WL</text>
+  <text x="690" y="542" fill="#111827" font-size="14" font-weight="600">Werner Lindner</text>
+  <text x="690" y="560" fill="#6B7280" font-size="12">lindner@mmb.de</text>
+  <!-- No status badge (empty status) -->
+  <rect x="650" y="580" width="76" height="20" rx="10" fill="#ECFEFF"/>
+  <text x="662" y="594" fill="#0891B2" font-size="10" font-weight="500">Spezialist</text>
+  <text x="650" y="636" fill="#9CA3AF" font-size="11">C-017</text>
+  <text x="880" y="636" fill="#D1D5DB" font-size="10">Oct 17, 2015</text>
+
+  <!-- Card 9: Maria Kuhlmann — Board (purple), NO status -->
+  <rect x="1008" y="508" width="370" height="150" rx="12" fill="white" filter="url(#shadow1)"/>
+  <rect x="1008" y="508" width="370" height="4" rx="12" fill="#7C3AED"/>
+  <circle cx="1042" cy="546" r="22" fill="#F5F3FF"/>
+  <text x="1031" y="551" fill="#7C3AED" font-size="11" font-weight="600">MK</text>
+  <text x="1072" y="542" fill="#111827" font-size="14" font-weight="600">Maria Kuhlmann</text>
+  <text x="1072" y="560" fill="#6B7280" font-size="12">mkuhlmann@web.de</text>
+  <!-- No status badge -->
+  <rect x="1032" y="580" width="56" height="20" rx="10" fill="#F5F3FF"/>
+  <text x="1044" y="594" fill="#7C3AED" font-size="10" font-weight="500">Board</text>
+  <text x="1032" y="636" fill="#9CA3AF" font-size="11">C-019</text>
+  <text x="1260" y="636" fill="#D1D5DB" font-size="10">Nov 23, 2015</text>
+
+  <!-- Pagination -->
+  <rect x="244" y="680" width="1134" height="44" rx="10" fill="white" filter="url(#shadow1)"/>
+  <text x="264" y="707" fill="#6B7280" font-size="12">1-9 of 50</text>
+  <rect x="1170" y="690" width="28" height="28" rx="6" fill="white" stroke="#D1D5DB" stroke-width="1"/>
+  <path d="M1188,700 l-4,4 4,4" fill="none" stroke="#6B7280" stroke-width="1.5"/>
+  <rect x="1206" y="690" width="28" height="28" rx="6" fill="#2563EB"/>
+  <text x="1216" y="709" fill="white" font-size="12" font-weight="500">1</text>
+  <rect x="1242" y="690" width="28" height="28" rx="6" fill="white" stroke="#D1D5DB" stroke-width="1"/>
+  <text x="1252" y="709" fill="#374151" font-size="12">2</text>
+  <rect x="1278" y="690" width="28" height="28" rx="6" fill="white" stroke="#D1D5DB" stroke-width="1"/>
+  <text x="1288" y="709" fill="#374151" font-size="12">3</text>
+  <rect x="1314" y="690" width="28" height="28" rx="6" fill="white" stroke="#D1D5DB" stroke-width="1"/>
+  <text x="1324" y="709" fill="#374151" font-size="12">4</text>
+  <rect x="1350" y="690" width="28" height="28" rx="6" fill="white" stroke="#D1D5DB" stroke-width="1"/>
+  <path d="M1360,700 l4,4 -4,4" fill="none" stroke="#6B7280" stroke-width="1.5"/>
+</svg>

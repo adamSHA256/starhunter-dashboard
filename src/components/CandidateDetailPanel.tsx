@@ -3,6 +3,7 @@ import { useLazyQuery } from '@apollo/client/react'
 import { GET_CANDIDATE_DETAILS } from '../graphql/candidates'
 import type { GetCandidateDetailsData, GetCandidateDetailsVars, CandidateDetail } from '../types/candidate'
 import { getStatusColor } from '../types/candidate'
+import { ASSET_BASE_URL } from '../lib/apollo'
 
 interface CandidateDetailPanelProps {
   candidateId: string | null
@@ -128,7 +129,7 @@ function DetailContent({ detail }: { detail: CandidateDetail }) {
           <div className="w-20 h-20 rounded-full bg-gray-200 flex items-center justify-center text-gray-600 font-bold text-xl shrink-0 overflow-hidden">
             {detail.avatar ? (
               <img
-                src={detail.avatar}
+                src={`${ASSET_BASE_URL}${detail.avatar}`}
                 alt={fullName}
                 className="w-20 h-20 rounded-full object-cover"
               />
@@ -289,7 +290,7 @@ function CandidateDetailPanel({ candidateId, onClose }: CandidateDetailPanelProp
         {/* Header */}
         <div className="px-6 py-4 border-b border-gray-200 flex items-center justify-between">
           <h2 className="text-base font-semibold text-gray-900 truncate">
-            {detail?.name ?? 'Candidate Details'}
+            Candidate
           </h2>
           <button
             type="button"

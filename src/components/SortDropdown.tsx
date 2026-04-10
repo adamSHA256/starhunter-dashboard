@@ -18,7 +18,7 @@ const SortDropdown = ({ value, onChange }: SortDropdownProps) => {
       <select
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="cursor-pointer appearance-none rounded-lg border border-gray-300 bg-white px-4 py-2.5 pr-10 text-sm text-gray-700 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+        className="w-full cursor-pointer appearance-none rounded-lg border border-gray-300 bg-white px-4 py-2.5 pr-10 text-sm text-gray-700 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500"
       >
         {sortOptions.map((option) => (
           <option key={option.value} value={option.value}>

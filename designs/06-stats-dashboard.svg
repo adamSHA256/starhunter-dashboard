@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" font-family="Inter, system-ui, sans-serif">
+  <title>Layout 6: Stats Dashboard - KPI cards on top, candidate grid below, real data</title>
+  <defs>
+    <filter id="shadow6" x="-2%" y="-2%" width="104%" height="108%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <rect width="1440" height="900" fill="#F9FAFB"/>
+
+  <!-- Header -->
+  <rect width="1440" height="48" fill="#111827"/>
+  <polygon points="20,24 25,10 30,24 16,16 34,16" fill="#818CF8"/>
+  <text x="38" y="29" fill="white" font-size="15" font-weight="700">Starhunter</text>
+  <rect x="200" y="8" width="86" height="32" rx="6" fill="#374151"/>
+  <text x="213" y="29" fill="white" font-size="12" font-weight="500">Candidates</text>
+  <text x="320" y="29" fill="#9CA3AF" font-size="12">Jobs</text>
+  <text x="365" y="29" fill="#9CA3AF" font-size="12">Analytics</text>
+  <rect x="1050" y="8" width="300" height="32" rx="8" fill="#374151"/>
+  <text x="1074" y="29" fill="#6B7280" font-size="12">Suchen...</text>
+  <circle cx="1410" cy="24" r="14" fill="#374151"/>
+  <text x="1403" y="28" fill="#D1D5DB" font-size="10" font-weight="600">SH</text>
+
+  <!-- KPI Row -->
+  <text x="40" y="82" fill="#111827" font-size="18" font-weight="700">Candidate Overview</text>
+
+  <rect x="40" y="96" width="322" height="90" rx="10" fill="white" filter="url(#shadow6)"/>
+  <text x="60" y="122" fill="#9CA3AF" font-size="11">TOTAL CANDIDATES</text>
+  <text x="60" y="156" fill="#111827" font-size="30" font-weight="700">50</text>
+  <rect x="300" y="114" width="40" height="40" rx="8" fill="#EEF2FF"/>
+  <text x="314" y="140" fill="#6366F1" font-size="16" font-weight="700">#</text>
+
+  <rect x="382" y="96" width="322" height="90" rx="10" fill="white" filter="url(#shadow6)"/>
+  <text x="402" y="122" fill="#9CA3AF" font-size="11">SUCHT AKTIV</text>
+  <text x="402" y="156" fill="#111827" font-size="30" font-weight="700">31</text>
+  <text x="448" y="156" fill="#9CA3AF" font-size="14">/ 50</text>
+  <rect x="642" y="114" width="40" height="40" rx="8" fill="#EFF6FF"/>
+  <circle cx="662" cy="134" r="12" fill="#3B82F6" opacity="0.2"/>
+  <circle cx="662" cy="134" r="5" fill="#3B82F6"/>
+
+  <rect x="724" y="96" width="322" height="90" rx="10" fill="white" filter="url(#shadow6)"/>
+  <text x="744" y="122" fill="#9CA3AF" font-size="11">KEIN STATUS</text>
+  <text x="744" y="156" fill="#111827" font-size="30" font-weight="700">19</text>
+  <text x="790" y="156" fill="#9CA3AF" font-size="14">/ 50</text>
+  <rect x="984" y="114" width="40" height="40" rx="8" fill="#F3F4F6"/>
+  <text x="998" y="140" fill="#9CA3AF" font-size="16">?</text>
+
+  <rect x="1066" y="96" width="334" height="90" rx="10" fill="white" filter="url(#shadow6)"/>
+  <text x="1086" y="122" fill="#9CA3AF" font-size="11">LEVELS BREAKDOWN</text>
+  <text x="1086" y="148" fill="#374151" font-size="12">Management: 9</text>
+  <text x="1086" y="166" fill="#374151" font-size="12">Spezialist: 7</text>
+  <text x="1240" y="148" fill="#374151" font-size="12">Board: 5</text>
+  <text x="1240" y="166" fill="#374151" font-size="12">COO: 1</text>
+
+  <!-- Toolbar -->
+  <rect x="40" y="204" width="1360" height="44" rx="8" fill="white" filter="url(#shadow6)"/>
+  <rect x="52" y="212" width="280" height="28" rx="6" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="82" y="231" fill="#9CA3AF" font-size="12">Kandidaten suchen...</text>
+  <rect x="346" y="212" width="120" height="28" rx="6" fill="white" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="362" y="231" fill="#6B7280" font-size="11">All Statuses</text>
+  <rect x="478" y="212" width="120" height="28" rx="6" fill="white" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="494" y="231" fill="#6B7280" font-size="11">Name A-Z</text>
+
+  <!-- Card Grid: 4 columns -->
+  <!-- Card 1: Isabella Rodriguez -->
+  <rect x="40" y="266" width="322" height="120" rx="10" fill="white" filter="url(#shadow6)"/>
+  <circle cx="68" cy="296" r="18" fill="#DBEAFE"/>
+  <text x="61" y="301" fill="#1E40AF" font-size="10" font-weight="600">IR</text>
+  <text x="94" y="292" fill="#111827" font-size="13" font-weight="600">Isabella Rodriguez</text>
+  <text x="94" y="308" fill="#6B7280" font-size="11">IR@sciint.de</text>
+  <text x="60" y="336" fill="#374151" font-size="11" font-weight="500">Spezialist</text>
+  <rect x="248" y="326" width="76" height="18" rx="9" fill="#DBEAFE"/>
+  <text x="258" y="339" fill="#1E40AF" font-size="9" font-weight="500">Sucht aktiv</text>
+  <text x="60" y="366" fill="#9CA3AF" font-size="10">C-001</text>
+  <text x="240" y="366" fill="#D1D5DB" font-size="10">Sep 3, 2015</text>
+
+  <!-- Card 2: Karin Nowak -->
+  <rect x="378" y="266" width="322" height="120" rx="10" fill="white" filter="url(#shadow6)"/>
+  <circle cx="406" cy="296" r="18" fill="#DBEAFE"/>
+  <text x="398" y="301" fill="#1E40AF" font-size="10" font-weight="600">KN</text>
+  <text x="432" y="292" fill="#111827" font-size="13" font-weight="600">Karin Nowak</text>
+  <text x="432" y="308" fill="#6B7280" font-size="11">karin@mailings.com</text>
+  <text x="398" y="336" fill="#374151" font-size="11" font-weight="500">Management</text>
+  <rect x="586" y="326" width="76" height="18" rx="9" fill="#DBEAFE"/>
+  <text x="596" y="339" fill="#1E40AF" font-size="9" font-weight="500">Sucht aktiv</text>
+  <text x="398" y="366" fill="#9CA3AF" font-size="10">C-003</text>
+
+  <!-- Card 3: Alexander Schumann -->
+  <rect x="716" y="266" width="322" height="120" rx="10" fill="white" filter="url(#shadow6)"/>
+  <circle cx="744" cy="296" r="18" fill="#DBEAFE"/>
+  <text x="737" y="301" fill="#1E40AF" font-size="10" font-weight="600">AS</text>
+  <text x="770" y="292" fill="#111827" font-size="13" font-weight="600">Alexander Schumann</text>
+  <text x="770" y="308" fill="#6B7280" font-size="11">wz@starhunter.de</text>
+  <text x="736" y="336" fill="#374151" font-size="11" font-weight="500">Management</text>
+  <rect x="924" y="326" width="76" height="18" rx="9" fill="#DBEAFE"/>
+  <text x="934" y="339" fill="#1E40AF" font-size="9" font-weight="500">Sucht aktiv</text>
+  <text x="736" y="366" fill="#9CA3AF" font-size="10">C-004</text>
+
+  <!-- Card 4: Julia Mbeki -->
+  <rect x="1054" y="266" width="322" height="120" rx="10" fill="white" filter="url(#shadow6)"/>
+  <circle cx="1082" cy="296" r="18" fill="#DBEAFE"/>
+  <text x="1075" y="301" fill="#1E40AF" font-size="10" font-weight="600">JM</text>
+  <text x="1108" y="292" fill="#111827" font-size="13" font-weight="600">Julia Mbeki</text>
+  <text x="1108" y="308" fill="#6B7280" font-size="11">Juliambeki@infomail.com</text>
+  <text x="1074" y="336" fill="#374151" font-size="11" font-weight="500">Board</text>
+  <rect x="1262" y="326" width="76" height="18" rx="9" fill="#DBEAFE"/>
+  <text x="1272" y="339" fill="#1E40AF" font-size="9" font-weight="500">Sucht aktiv</text>
+  <text x="1074" y="366" fill="#9CA3AF" font-size="10">C-005</text>
+
+  <!-- Row 2 -->
+  <rect x="40" y="402" width="322" height="120" rx="10" fill="white" filter="url(#shadow6)"/>
+  <circle cx="68" cy="432" r="18" fill="#DBEAFE"/>
+  <text x="60" y="437" fill="#1E40AF" font-size="10" font-weight="600">KS</text>
+  <text x="94" y="428" fill="#111827" font-size="13" font-weight="600">Katharina Simon</text>
+  <text x="94" y="444" fill="#6B7280" font-size="11">simon@ctu.com</text>
+  <text x="60" y="472" fill="#374151" font-size="11" font-weight="500">Management</text>
+  <rect x="248" y="462" width="76" height="18" rx="9" fill="#DBEAFE"/>
+  <text x="258" y="475" fill="#1E40AF" font-size="9" font-weight="500">Sucht aktiv</text>
+  <text x="60" y="502" fill="#9CA3AF" font-size="10">C-006</text>
+
+  <rect x="378" y="402" width="322" height="120" rx="10" fill="white" filter="url(#shadow6)"/>
+  <circle cx="406" cy="432" r="18" fill="#E5E7EB"/>
+  <text x="397" y="437" fill="#6B7280" font-size="10" font-weight="600">WL</text>
+  <text x="432" y="428" fill="#111827" font-size="13" font-weight="600">Werner Lindner</text>
+  <text x="432" y="444" fill="#6B7280" font-size="11">lindner@mmb.de</text>
+  <text x="398" y="472" fill="#374151" font-size="11" font-weight="500">Spezialist</text>
+  <rect x="586" y="462" width="36" height="18" rx="9" fill="#F3F4F6"/>
+  <text x="596" y="475" fill="#9CA3AF" font-size="9">--</text>
+  <text x="398" y="502" fill="#9CA3AF" font-size="10">C-017</text>
+
+  <rect x="716" y="402" width="322" height="120" rx="10" fill="white" filter="url(#shadow6)"/>
+  <circle cx="744" cy="432" r="18" fill="#E5E7EB"/>
+  <text x="735" y="437" fill="#6B7280" font-size="10" font-weight="600">MK</text>
+  <text x="770" y="428" fill="#111827" font-size="13" font-weight="600">Maria Kuhlmann</text>
+  <text x="770" y="444" fill="#6B7280" font-size="11">mkuhlmann@web.de</text>
+  <text x="736" y="472" fill="#374151" font-size="11" font-weight="500">Board</text>
+  <rect x="924" y="462" width="36" height="18" rx="9" fill="#F3F4F6"/>
+  <text x="934" y="475" fill="#9CA3AF" font-size="9">--</text>
+  <text x="736" y="502" fill="#9CA3AF" font-size="10">C-019</text>
+
+  <rect x="1054" y="402" width="322" height="120" rx="10" fill="white" filter="url(#shadow6)"/>
+  <circle cx="1082" cy="432" r="18" fill="#E5E7EB"/>
+  <text x="1073" y="437" fill="#6B7280" font-size="10" font-weight="600">AW</text>
+  <text x="1108" y="428" fill="#111827" font-size="13" font-weight="600">Dr. Annika Williams</text>
+  <text x="1108" y="444" fill="#6B7280" font-size="11">annika.williams@projectlife.de</text>
+  <text x="1074" y="472" fill="#374151" font-size="11" font-weight="500">Board</text>
+  <rect x="1262" y="462" width="36" height="18" rx="9" fill="#F3F4F6"/>
+  <text x="1272" y="475" fill="#9CA3AF" font-size="9">--</text>
+  <text x="1074" y="502" fill="#9CA3AF" font-size="10">C-021</text>
+
+  <!-- Pagination -->
+  <rect x="40" y="540" width="1360" height="40" rx="8" fill="white" filter="url(#shadow6)"/>
+  <text x="60" y="565" fill="#6B7280" font-size="12">1-8 of 50</text>
+  <rect x="1296" y="548" width="28" height="26" rx="6" fill="#4F46E5"/>
+  <text x="1306" y="566" fill="white" font-size="11" font-weight="500">1</text>
+  <rect x="1332" y="548" width="28" height="26" rx="6" fill="white" stroke="#D1D5DB" stroke-width="1"/>
+  <text x="1342" y="566" fill="#374151" font-size="11">2</text>
+  <rect x="1368" y="548" width="28" height="26" rx="6" fill="white" stroke="#D1D5DB" stroke-width="1"/>
+  <path d="M1378,558 l4,4 -4,4" fill="none" stroke="#6B7280" stroke-width="1.5"/>
+</svg>
